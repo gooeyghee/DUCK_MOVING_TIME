@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <base target="_blank" />
+    <title> Duck Moving Time </title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="col col1">
+        <div class="layout">
+        <video
+          id="webcam_canvas"
+          playsinline
+          autoplay
+          style="display: none"
+        ></video>
+        <canvas id="out_canvas"></canvas>
+        <canvas id="out_canvas_colors"></canvas>
+        </div>
+
+      </div>
+
+      <div class="col col2">
+
+          <div class="flex-container" id="default">
+            
+          <div class="mainScreen" id="mainScreen">
+          <div class="header">
+           <div style="display: flex; flex-direction: column; justify-content: center;">
+            <div id="titleObject" style="display:flex; -webkit-text-stroke: 0.75vw #315B8C; paint-order: stroke fill; color:white; padding-bottom:5px; letter-spacing: 30rem;; text-align: center; justify-content: center;"> </div>
+            <div style="font-size: 2vh;"> by Pénélope Perret & Guilherme Nunes </div>  
+           </div>
+            
+          </div>
+      
+
+                <div class="lettershowcase-container">
+                <div id="lettershowcase"> Aa </div>
+
+                <div class="font-settings-container">
+                    <div id="weight-setting"> weight: 100 </div>
+                    <div id="size-setting"> size: 100 </div>
+                    <div id="rotation-setting"> rotation: 100 </div>
+                </div>
+                </div>
+              
+              <div class="otherStuff"> 
+                
+                <div id="grid" ></div>
+
+                <div class="decorations">
+                <div>
+                <div id="timer"> 1:30 </div>
+                </div>
+                <div>
+                <div style="display:flex; margin-top:5%;">
+                  <div style="display:flex; flex-direction: column; justify-content: center; justify-items: center; text-align: center; align-items: center;">
+                    <div id="duck-coordinates"> </div>
+                    <div style="margin-top: 5%;"> ducks </div>
+                  </div>
+
+                  <div style="display:flex; flex-direction: column; justify-content: center; justify-items: center; text-align: center; align-items: center;">
+                    <div id="hits"> 0 </div>
+                    <div style="margin-top: 15px;"> hits </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+              </div>
+
+              <div id="hit-pop-up" class="hit-pop-up"> -10hp </div>
+              
+              <div id="addduck">
+                <div class="parent">
+                  <div class="div1">
+                    silly g
+                  </div>
+                  <div class="div2" class=duckcounter id="duckcounter">00</div>
+                  <div class="div3">se</div>
+                </div>
+              </div>
+              
+              <div id="loading">
+                <div class="container-item" id="loading1"> loading ducks... </div>
+                <div class="container-item" id="loading2"> loading ducks... </div>
+                <div class="container-item" id="loading3"> loading ducks... </div>
+                <div class="container-item" id="loading4"> loading ducks... </div>
+                <div class="container-item" id="loading5"> loading ducks... </div>
+                <div class="container-item" id="loading6"> loading ducks... </div>
+                <div class="container-item" id="loading7"> loading ducks... </div>
+                <div class="container-item" id="loading8"> loading ducks... </div>
+                <div class="container-item" id="loading9"> loading ducks... </div>
+                <div class="container-item" id="loading10"> loading ducks... </div>
+                <div class="container-item" id="loading11"> loading ducks... </div>
+                <div class="container-item" id="loading12"> loading ducks... </div>
+              </div>
+
+              <div id ="fanScreen" class="fanScreen">
+
+                <div id="fanValue" class="fanRotation"> </div>
+
+              </div>
+
+              <div id = "endScreen" class="endScreen">
+
+                    <section id="endScreen">
+                        <p id="endScreenBackground">$$$$$$$$$$$$$$ <br>$$$$$$$$$$$$$$<br>$$$$$$$$$$$$$$<br>$$$$$$$$$$$$$$<br>$$$$$$$$$$$$$$<br>$$$$$$$$$$$$$$<br>$$$$$$$$$$$$$$<br>$$$$$$$$$$$$$$<br>$$$$$$$$$$$$$$<br>$$$$$$$$$$$$$$ <br>$$$$$$$$$$$$$$ <br>$$$$$$$$$$$$$$ <br>$$$$$$$$$$$$$$ </p> <br>
+                        <p id="endScreenTitle">out of duck <br> out of luck</p>
+                    </section>
+
+
+              </div>
+
+
+
+
+        
+        
+      </div>
+    </div>
+  </div> 
+  
+    <script src="script.js"></script>
+    <script src="assets/srcmic.js"></script>
+    <script src="assets/lz-string.min.js"></script>
+    <script type="module" src="assets/video_process.js" async></script>
+    <script type="module" src="main.js" async></script>
+  </body>
+</html>
